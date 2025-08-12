@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fahz-AttackerMods?</title>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<header>Fahz-AttackerMods?</header>
+
+<div class="container" id="toolsContainer">
+    <div class="tool">
+        <h3>DDoS Attack (Dangerous)</h3>
+        <input type="text" id="ddosTarget" placeholder="Target IP/Domain">
+        <button onclick="simulate('DDoS Attack', 'ddosOutput')">Start Attack</button>
+        <div class="output" id="ddosOutput"></div>
+    </div>
+    <div class="tool">
+        <h3>Virus Encryptor (Sending)</h3>
+        <input type="text" id="virusTarget" placeholder="Target File/Folder">
+        <button onclick="simulate('Virus Encryptor', 'virusOutput')">Encrypt</button>
+        <div class="output" id="virusOutput"></div>
+    </div>
+    <div class="tool">
+        <h3>Website Attack (LocalHost)</h3>
+        <input type="text" id="webTarget" placeholder="Target Website">
+        <button onclick="simulate('Website Attack', 'webOutput')">Attack</button>
+        <div class="output" id="webOutput"></div>
+    </div>
+    <div class="tool">
+        <h3>Port Scanner (Traffic)</h3>
+        <input type="text" id="portTarget" placeholder="Target Host">
+        <button onclick="simulate('Port Scanner', 'portOutput')">Scan</button>
+        <div class="output" id="portOutput"></div>
+    </div>
+</div>
+
+<div id="adminCmds">
+    <h3>Admin Cmds Terminal</h3>
+    <div>> Host: <span style="color:red">$FahzCmds</span></div>
+    <input type="text" id="cmdInput" placeholder="$FahzCmds">
+    <div class="output" id="cmdOutput"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
